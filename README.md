@@ -9,6 +9,12 @@ An independent downstream project based on [ShyVortex/dlss-unlocked](https://git
 基于 [ShyVortex/dlss-unlocked](https://github.com/ShyVortex/dlss-unlocked) 的独立下游项目，重点研究 XeFG 30× 多帧生成与 DLSSG 6× 帧生成兼容集成，并提供配置说明、部署指南和游戏测试记录。
 
 ---
+整合包下载地址：
+链接：https://pan.quark.cn/s/63af3159c11f?pwd=rB7B
+提取码：rB7B
+
+---
+
 
 ## 简体中文
 

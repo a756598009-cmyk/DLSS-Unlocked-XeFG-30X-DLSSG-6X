@@ -54,13 +54,59 @@ An independent downstream project based on [ShyVortex/dlss-unlocked](https://git
 
 ### 安装与使用
 
-1. 前往项目的 [Releases](../../releases) 页面查看可用版本。
-2. 阅读对应版本的更新说明和安装要求。
-3. 按照项目提供的安装包或独立压缩包说明进行部署。
-4. 根据目标游戏和组件要求调整配置。
-5. 首次运行时建议使用保守设置，确认游戏正常启动后再逐步测试更高倍率。
+使用教程（简体中文）
 
-如果当前没有可用的正式 Release，请以仓库源码和相关组件的官方文档为准。
+教程一：标准版安装与使用
+
+将 .7z 压缩包复制到目标游戏的根目录，并解压或按照压缩包内的说明放置文件。
+
+运行 「开关30倍帧生成」。
+
+根据程序提示，输入对应的数字，选择需要启用的多帧生成方式。
+
+完成选择后，启动游戏。后续操作与常规 OptiScaler 的使用流程基本一致。
+
+版本说明： 此版本加入了 4 种 XeSS 30× 帧生成方式。具体模式以程序实际显示的选项为准。
+
+教程二：滤镜版安装与使用（ReShade）
+
+第一步：部署游戏文件
+
+将 .7z 压缩包复制到目标游戏的根目录，并解压或按照压缩包内的说明放置文件。
+
+运行 「开关30倍帧生成」。
+
+根据程序提示，输入对应数字，选择需要启用的多帧生成方式。
+
+第二步：启用滤镜功能
+
+运行 「开关30倍帧生成_+更换最新红色版本+滤镜.exe」。
+
+根据程序提示，输入数字 8，选择滤镜功能。
+
+第三步：安装 ReShade
+
+运行 ReShade_Setup_6.8.0.exe。
+
+点击 Browse，选择游戏根目录中的游戏主程序 .exe 文件。
+
+点击 Open。
+
+按照安装向导依次点击 Next → Next → Finish，完成安装。
+
+第四步：覆盖滤镜文件
+
+解压滤镜文件。
+
+找到其中的 reshade-shaders 文件夹。
+
+将该文件夹复制到游戏根目录，并覆盖已有的同名文件夹。
+
+启动游戏，按 Home 键呼出 ReShade 滤镜界面。
+
+后续滤镜配置与常规 OptiScaler / ReShade 使用流程基本一致。
+
+版本说明： 此版本加入了 4 种 XeSS 30× 帧生成方式。请根据实际菜单选项选择对应模式。
 
 ### 故障排查
 
@@ -145,14 +191,59 @@ The 30× and 6× figures represent project feature targets. They do not imply un
 
 ### Installation and Usage
 
-1. Visit the project's [Releases](../../releases) page.
-2. Review the release notes and requirements.
-3. Follow the installation instructions for the available installer or standalone archive.
-4. Configure the components for the target game.
-5. Start with conservative settings, verify stability, and then test higher multipliers.
+Usage Guide (English)
 
-If no official release is available yet, refer to the source code and the documentation of the relevant upstream components.
+Tutorial 1: Standard Edition
 
+Copy the .7z archive to the target game's root directory. Extract the archive or place its contents according to the included instructions.
+
+Run "开关30倍帧生成" (30× Frame Generation Switch).
+
+Follow the on-screen prompts and enter the corresponding number to select the desired multi-frame generation mode.
+
+Launch the game. The remaining steps are generally similar to the standard OptiScaler workflow.
+
+Version note: This release includes four XeSS 30× frame generation modes. Refer to the options displayed by the program for the available choices.
+
+Tutorial 2: Filter Edition (ReShade)
+
+Step 1: Deploy the game files
+
+Copy the .7z archive to the target game's root directory. Extract the archive or place its contents according to the included instructions.
+
+Run "开关30倍帧生成" (30× Frame Generation Switch).
+
+Follow the on-screen prompts and enter the corresponding number to select the desired multi-frame generation mode.
+
+Step 2: Enable the filter feature
+
+Run "开关30倍帧生成_+更换最新红色版本+滤镜.exe".
+
+When prompted, enter 8 to select the filter feature.
+
+Step 3: Install ReShade
+
+Run ReShade_Setup_6.8.0.exe.
+
+Click Browse and select the game's main .exe file in the game root directory.
+
+Click Open.
+
+Follow the installer prompts by clicking Next → Next → Finish.
+
+Step 4: Copy the filter files
+
+Extract the filter archive.
+
+Locate the reshade-shaders folder inside the extracted files.
+
+Copy it into the game's root directory and overwrite the existing folder with the same name.
+
+Launch the game and press Home to open the ReShade interface.
+
+Continue configuring the filters using the standard OptiScaler / ReShade workflow.
+
+Version note: This release includes four XeSS 30× frame generation modes. Select the appropriate mode based on the options displayed by the program.
 ### Troubleshooting
 
 For launch failures, black screens, crashes, unavailable frame generation options, or visual artifacts, check:

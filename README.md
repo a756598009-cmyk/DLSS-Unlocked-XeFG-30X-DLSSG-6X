@@ -12,7 +12,7 @@ An independent downstream project based on [ShyVortex/dlss-unlocked](https://git
 整合包下载地址：
 链接：https://pan.quark.cn/s/63af3159c11f?pwd=rB7B
 提取码：rB7B
-
+- 视频教程：[柠檬有多萌萌胧未可知 · 哔哩哔哩个人空间](https://space.bilibili.com/173069391?spm_id_from=333.1007.0.0)
 ---
 
 
